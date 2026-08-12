@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>هدية | متجر عبايات ونقاب ومكملات الحجاب بأجود الخامات</title>
+  <meta name="description" content="متجر هدية يقدم تشكيلة مميزة وفاخرة من العبايات، النقاب، الخمار ومكملات الحجاب بخامات عالية الجودة وتصاميم أنيقة تناسب كل الأذواق.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <script src="js/app.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      
+      <a href="index.html" class="header__brand">
+        <span class="header__logo">
+          <span class="header__logo-text">هدية</span>
+        </span>
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link active">الرئيسية</a></li>
+          <li><a href="shop.html" class="header__nav-link">المتجر</a></li>
+          <li><a href="shop.html?category=abayas" class="header__nav-link">العبايات</a></li>
+          <li><a href="shop.html?category=niqab" class="header__nav-link">النقاب</a></li>
+          <li><a href="shop.html?category=khimar" class="header__nav-link">الخمار</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__action-btn" id="search-toggle" aria-label="بحث في المتجر">
+          <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="header__action-btn" id="wishlist-btn" aria-label="المفضلة">
+          <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="header__badge" id="wishlist-count">0</span>
+        </button>
+        <button class="header__action-btn" id="cart-toggle" aria-label="سلة التسوق">
+          <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="header__badge" id="cart-count">0</span>
+        </button>
+        
+        <button class="header__menu-toggle" id="menu-toggle" aria-label="القائمة البرمجية">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero__slider">
+          
+          <div class="hero__slide active">
+            <img src="images/hero/hero1.png" alt="هدية - مجموعة جديدة" class="hero__slide-bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+              <span class="hero__subtitle">مجموعة 2026 الجديدة</span>
+              <h1 class="hero__title">أناقة الاحتشام والجمال</h1>
+              <p class="hero__desc">تصاميم راقية تجمع بين البساطة والوقار بأجود الأقمشة الفاخرة التي تمنحكِ راحة وثقة في كل لحظة.</p>
+              <div class="hero__cta">
+                <a href="shop.html" class="btn btn-secondary btn-lg">تسوقي التشكيلة الآن</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__slide">
+            <img src="images/hero/hero1.png" alt="هدية - تشكيلة النقاب" class="hero__slide-bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+              <span class="hero__subtitle">احتشامك اختيارك</span>
+              <h2 class="hero__title">نقاب بخامات مسامية ناعمة</h2>
+              <p class="hero__desc">تشكيلة مميزة من النقاب المائل وبدون اسم المصنوع من أحدث الخامات المريحة للتنفس طوال اليوم.</p>
+              <div class="hero__cta">
+                <a href="shop.html?category=niqab" class="btn btn-secondary btn-lg">اكتشفي قسم النقاب</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__slide">
+            <img src="images/hero/hero1.png" alt="هدية - عروض خاصة" class="hero__slide-bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+              <span class="hero__subtitle">عروض حصرية</span>
+              <h2 class="hero__title">خصومات تصل إلى 40%</h2>
+              <p class="hero__desc">لا تفوتي فرصة الحصول على أجمل عبايات وخمار الحجاب بأفضل الأسعار لفترة محدودة.</p>
+              <div class="hero__cta">
+                <a href="shop.html" class="btn btn-secondary btn-lg">تسوقي العروض الآن</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero__nav">
+          <div class="hero__dot active" data-slide="0"></div>
+          <div class="hero__dot" data-slide="1"></div>
+          <div class="hero__dot" data-slide="2"></div>
+        </div>
+
+        <div class="hero__arrows">
+          <button class="hero__arrow" id="hero-prev" aria-label="السابق">
+            <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="hero__arrow" id="hero-next" aria-label="التالي">
+            <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Features Bar -->
+      <section class="features-bar">
+        <div class="features-bar__grid">
+          
+          <div class="feature-item">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div>
+              <h4 class="feature-item__title">شحن سريع وآمن</h4>
+              <p class="feature-item__text">توصيل لكل المحافظات خلال 48 ساعة</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4 class="feature-item__title">جودة مضمونة 100%</h4>
+              <p class="feature-item__text">أجود خامات الكريب والقطن الفاخر</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4 class="feature-item__title">دعم متواصل</h4>
+              <p class="feature-item__text">خدمة عملاء ممتازة لتلبية كل استفساراتكِ</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+            </div>
+            <div>
+              <h4 class="feature-item__title">الدفع عند الاستلام</h4>
+              <p class="feature-item__text">مع إمكانية الفحص والمعاينة قبل الدفع</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="section categories">
+        <div class="section-header">
+          <h2>تسوقي حسب الفئة</h2>
+          <p>اكتشفي الأقسام المتنوعة لعلامة هدية وتأنقي بما يناسب ذوقكِ الفريد</p>
+        </div>
+
+        <div class="categories__grid">
+          
+          <a href="shop.html?category=niqab" class="category-card">
+            <img src="images/products/black-niqab.png" alt="النقاب" class="category-card__image" loading="lazy">
+            <div class="category-card__overlay">
+              <h3 class="category-card__name">قسم النقاب</h3>
+              <span class="category-card__count">8 منتجات</span>
+            </div>
+            <div class="category-card__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </div>
+          </a>
+
+          <a href="shop.html?category=abayas" class="category-card">
+            <img src="images/products/beige-abaya.png" alt="العبايات" class="category-card__image" loading="lazy">
+            <div class="category-card__overlay">
+              <h3 class="category-card__name">قسم العبايات</h3>
+              <span class="category-card__count">8 منتجات</span>
+            </div>
+            <div class="category-card__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </div>
+          </a>
+
+          <a href="shop.html?category=khimar" class="category-card">
+            <img src="images/products/lilac-khimar.png" alt="الخمار" class="category-card__image" loading="lazy">
+            <div class="category-card__overlay">
+              <h3 class="category-card__name">قسم الخمار</h3>
+              <span class="category-card__count">5 منتجات</span>
+            </div>
+            <div class="category-card__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </div>
+          </a>
+
+          <a href="shop.html?category=abayas" class="category-card">
+            <img src="images/products/navy-abaya.png" alt="إسدالات الصلاة" class="category-card__image" loading="lazy">
+            <div class="category-card__overlay">
+              <h3 class="category-card__name">إسدالات الصلاة</h3>
+              <span class="category-card__count">3 منتجات</span>
+            </div>
+            <div class="category-card__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </div>
+          </a>
+
+          <a href="shop.html?category=khimar" class="category-card">
+            <img src="images/products/brown-khimar.png" alt="مكملات الحجاب" class="category-card__image" loading="lazy">
+            <div class="category-card__overlay">
+              <h3 class="category-card__name">مكملات الحجاب</h3>
+              <span class="category-card__count">4 منتجات</span>
+            </div>
+            <div class="category-card__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="section products-section">
+        <div class="section-header">
+          <h2>الأكثر مبيعاً ورواجاً</h2>
+          <p>اختيارات عميلاتنا المفضلة بتصميماتها المميزة وجودتها الاستثنائية</p>
+        </div>
+
+        <div class="products-grid">
+          
+          <div class="product-card" data-id="1" data-name="نقاب كلاسيكي بدون اسم" data-price="250" data-image="images/products/black-niqab.png">
+            <div class="product-card__image-wrapper">
+              <span class="product-card__badge product-card__badge--hot">الأكثر مبيعاً</span>
+              <img src="images/products/black-niqab.png" alt="نقاب كلاسيكي بدون اسم" class="product-card__image" loading="lazy">
+              <div class="product-card__actions">
+                <button class="product-card__action wishlist-toggle-btn" aria-label="إضافة للمفضلة">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </button>
+                <a href="product.html" class="product-card__action" aria-label="عرض التفاصيل">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </a>
+              </div>
+              <div class="product-card__quick-add">
+                <button class="btn btn-primary add-to-cart-btn">أضف للسلة</button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">نقاب</span>
+              <h3 class="product-card__name"><a href="product.html">نقاب كلاسيكي بدون اسم (جبهة)</a></h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">250 ج.م</span>
+                <span class="product-card__price-old">320 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="2" data-name="خمار ليلاك بودر ناعم" data-price="320" data-image="images/products/lilac-khimar.png">
+            <div class="product-card__image-wrapper">
+              <span class="product-card__badge product-card__badge--new">جديد</span>
+              <img src="images/products/lilac-khimar.png" alt="خمار ليلاك بودر" class="product-card__image" loading="lazy">
+              <div class="product-card__actions">
+                <button class="product-card__action wishlist-toggle-btn" aria-label="إضافة للمفضلة">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </button>
+                <a href="product.html" class="product-card__action" aria-label="عرض التفاصيل">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </a>
+              </div>
+              <div class="product-card__quick-add">
+                <button class="btn btn-primary add-to-cart-btn">أضف للسلة</button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">خمار</span>
+              <h3 class="product-card__name"><a href="product.html">خمار ليلاك بودر درابيه أنيق</a></h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">320 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="3" data-name="عباية بيج كريمي" data-price="450" data-image="images/products/beige-abaya.png">
+            <div class="product-card__image-wrapper">
+              <img src="images/products/beige-abaya.png" alt="عباية بيج كريمي" class="product-card__image" loading="lazy">
+              <div class="product-card__actions">
+                <button class="product-card__action wishlist-toggle-btn" aria-label="إضافة للمفضلة">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </button>
+                <a href="product.html" class="product-card__action" aria-label="عرض التفاصيل">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </a>
+              </div>
+              <div class="product-card__quick-add">
+                <button class="btn btn-primary add-to-cart-btn">أضف للسلة</button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">عبايات</span>
+              <h3 class="product-card__name"><a href="product.html">عباية بيج كريمي بأسورة مطرزة</a></h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">450 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="4" data-name="عباية كحلي ملكي" data-price="480" data-image="images/products/navy-abaya.png">
+            <div class="product-card__image-wrapper">
+              <span class="product-card__badge product-card__badge--sale">خصم 15%</span>
+              <img src="images/products/navy-abaya.png" alt="عباية كحلي ملكي" class="product-card__image" loading="lazy">
+              <div class="product-card__actions">
+                <button class="product-card__action wishlist-toggle-btn" aria-label="إضافة للمفضلة">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </button>
+                <a href="product.html" class="product-card__action" aria-label="عرض التفاصيل">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </a>
+              </div>
+              <div class="product-card__quick-add">
+                <button class="btn btn-primary add-to-cart-btn">أضف للسلة</button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">عبايات</span>
+              <h3 class="product-card__name"><a href="product.html">عباية كحلي ملكية كريب سعودي</a></h3>
+              <div class="product-card__price">
+                <span class="product-card__price-current">480 ج.م</span>
+                <span class="product-card__price-old">560 ج.م</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Promo Banner Section -->
+      <section class="section">
+        <div class="promo-banner">
+          <img src="images/hero/hero1.png" alt="بانر هدية" class="promo-banner__bg" loading="lazy">
+          <div class="promo-banner__overlay"></div>
+          <div class="promo-banner__content">
+            <h2 class="promo-banner__title">احتشامك اختيارك وجمالك</h2>
+            <p class="promo-banner__text">نعتني بكافة التفاصيل لنقدم لكِ عبايات ونقاب وخمار بأعلى معايير الجودة والراحة مع المحافظة على قيم الوقار والجمال.</p>
+            <a href="shop.html" class="btn btn-secondary btn-lg">استكشفي المجموعات الكاملة</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Modernized Footer (Clean 4-column layout) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        
+        <div>
+          <a href="index.html" class="footer__brand-logo">
+            هدية
+          </a>
+          <p class="footer__brand-text">متجر هدية متخصص في توفير أرقى العبايات، النقاب، الخمار ومكملات الحجاب بخامات فاخرة عالية الجودة وتصاميم عصرية يناسب أسلوبكِ الراقي.</p>
+          
+          <div class="footer__social">
+            <a href="javascript:void(0);" class="footer__social-link" aria-label="إنستجرام">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="javascript:void(0);" class="footer__social-link" aria-label="فيسبوك">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="javascript:void(0);" class="footer__social-link" aria-label="تيك توك">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">تسوقي معنا</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="shop.html">جميع المنتجات</a></li>
+            <li><a href="shop.html?category=abayas">قسم العبايات</a></li>
+            <li><a href="shop.html?category=niqab">قسم النقاب</a></li>
+            <li><a href="shop.html?category=khimar">قسم الخمار</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">خدمة العملاء</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0);">سياسة الشحن والتوصيل</a></li>
+            <li><a href="javascript:void(0);">سياسة الاستبدال والاسترجاع</a></li>
+            <li><a href="javascript:void(0);">دليل تحديد المقاسات</a></li>
+            <li><a href="javascript:void(0);">الأسئلة الشائعة</a></li>
+            <li><a href="cart.html">سلة التسوق</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">تواصل معنا</h4>
+          <div class="footer__contact-item">
+            <span>القاهرة، جمهورية مصر العربية</span>
+          </div>
+          <div class="footer__contact-item">
+            <span dir="ltr">+20 100 123 4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>support@hadiya.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>السبت - الخميس: 9:00 ص - 10:00 م</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Native Mobile Bottom Navigation Bar (Mobile Only) -->
+  <div class="mobile-bottom-nav">
+    <div class="mobile-bottom-nav__inner">
+      <a href="index.html" class="mobile-bottom-nav__item active">
+        <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>الرئيسية</span>
+      </a>
+
+      <a href="shop.html" class="mobile-bottom-nav__item">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>المتجر</span>
+      </a>
+
+      <button class="mobile-bottom-nav__item" id="mobile-bottom-search">
+        <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>بحث</span>
+      </button>
+
+      <button class="mobile-bottom-nav__item" id="mobile-bottom-wishlist">
+        <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>المفضلة</span>
+        <span class="mobile-bottom-nav__badge" id="mobile-wishlist-count">0</span>
+      </button>
+
+      <button class="mobile-bottom-nav__item" id="mobile-bottom-cart">
+        <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>السلة</span>
+        <span class="mobile-bottom-nav__badge" id="mobile-cart-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-overlay__inner">
+      <div class="search-overlay__input-wrapper">
+        <input type="text" class="search-overlay__input" placeholder="ابحثي عن عباية، نقاب، خمار..." id="search-input">
+        <button class="search-overlay__close" id="search-close" aria-label="إغلاق البحث">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu__overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__header">
+      <span class="header__logo" style="font-size: 1.5rem;">هدية</span>
+      <button class="mobile-menu__close" id="menu-close" aria-label="إغلاق القائمة">✕</button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__nav-link active">الرئيسية</a>
+      <a href="shop.html" class="mobile-menu__nav-link">المتجر الرئيسي</a>
+      <a href="shop.html?category=abayas" class="mobile-menu__nav-link">قسم العبايات</a>
+      <a href="shop.html?category=niqab" class="mobile-menu__nav-link">قسم النقاب</a>
+      <a href="shop.html?category=khimar" class="mobile-menu__nav-link">قسم الخمار</a>
+    </nav>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer__overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">سلة التسوق (<span id="cart-drawer-count">0</span>)</h3>
+      <button class="mobile-menu__close" id="cart-close" aria-label="إغلاق السلة">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cart-drawer-items"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>الإجمالي:</span>
+        <span id="cart-drawer-total">0 ج.م</span>
+      </div>
+      <a href="cart.html" class="btn btn-primary cart-drawer__checkout">إتمام الطلب والدفع</a>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="wishlist-drawer__overlay" id="wishlist-overlay"></div>
+  <div class="wishlist-drawer" id="wishlist-drawer">
+    <div class="wishlist-drawer__header">
+      <h3 class="cart-drawer__title">قائمة المفضلة</h3>
+      <button class="mobile-menu__close" id="wishlist-close" aria-label="إغلاق المفضلة">✕</button>
+    </div>
+    <div class="wishlist-drawer__items" id="wishlist-drawer-items"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span id="toast-message">تمت إضافة المنتج إلى السلة بنجاح</span>
+  </div>
+
+  <!-- Scroll To Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="الرجوع للأعلى">↑</button>
+
+</body>
+</html>
