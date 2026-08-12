@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Static HTML/CSS/JS store",
   "scripts": {
-    "dev": "live-server --port=3000 --open=/ --host=localhost"
+    "dev": "live-server --port=3000 --open=/ --host=localhost",
+    "build": "echo Static site - no build needed"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
